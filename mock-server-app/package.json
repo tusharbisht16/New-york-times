@@ -1,0 +1,23 @@
+{
+  "name": "new-york-times",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch database.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tusharbisht16/New-york-times.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tusharbisht16/New-york-times/issues"
+  },
+  "homepage": "https://github.com/tusharbisht16/New-york-times#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
