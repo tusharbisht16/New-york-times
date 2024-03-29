@@ -1,7 +1,56 @@
-@media (min-width: 1320px) {
+@media (min-width: 1200px) {
     .container {
-      max-width: 1320px;
+      max-width: 1220px;
       margin: auto;
     }
   }
+  #container{
+    display: grid;
+    grid-template-areas: "a1 a1 a1 a1 a2";
 
+  }
+  #first{
+grid-area: a1;
+border: 1px solid black;
+  padding: 10px 5px 10px 10px ;
+  box-sizing: content-box;
+  }
+  #second{
+    grid-area: a2;
+    border: 1px solid black;
+    height: 200px;
+  }
+
+  .card1{
+    display: flex;
+  
+    justify-content: space-between;
+    position: relative;
+  }
+  /* .img1{
+    position: relative;
+    top: 30%;
+    left: -100px;
+  } */
+  .icard2{
+    top: 50%;
+  left: 55%;
+  transform: translate(-0%, -10%);
+  }
+.details>a{
+  text-decoration: none;
+  color: black;
+}
+.title>a{
+  text-decoration: none;
+  color: black;
+}
+.card2{
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  
+}
+.simg{
+  margin: auto;
+}
