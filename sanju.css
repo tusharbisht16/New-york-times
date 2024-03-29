@@ -1,0 +1,120 @@
+#container1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap:500px;
+    padding:30px;
+    /* cursor: pointer; */
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+}
+.space{
+    margin-left:20px;
+}
+button{
+    color:white;
+    background-color:rgba(87, 100, 136, 0.685);
+    padding:20px;
+    border-radius:5px;
+    font-size:15px;
+    font-weight: 200;
+    border:none;
+    cursor: pointer;
+}
+button>a{
+    color: white;
+    background-color:rgba(87, 100, 136, 0.685);
+    font-size:15px;
+    font-weight: 200;
+    text-decoration: none;
+
+}
+span,img{
+    cursor: pointer;
+}
+.double{
+    
+        border: none;
+        border-top: 3px double #333;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+    
+      
+      
+        background: #fff;
+        content: '§';
+        padding: 0 4px;
+        position: relative;
+        top: -13px;
+    
+      
+}
+.display{
+    
+    display: none;
+}
+#container1>div:nth-child(2){
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:58;
+        font-size: 20px;
+        font-style: normal;
+        margin-right:80px;
+      
+      
+}
+span:hover{
+    color:black;
+    padding:20px;
+    border-radius:5px;
+    background-color: rgb(241, 239, 239);
+}
+
+button:hover{
+    background-color: rgba(67, 76, 99, 0.685);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+#container2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap:300px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:58;
+    font-size: 20px;
+}
+#container3{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap:80px;
+    font-size:30px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:58;
+    font-style: normal;
+}
+
+
+@media(min-width:1320px){
+    .container{
+        max-width:1320px;
+        margin:auto;
+    }
+    
+}
+
