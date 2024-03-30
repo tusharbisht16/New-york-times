@@ -1,14 +1,16 @@
 // let container = document.getElementById("container");
-
+let Dataurl = "https://new-york-times-2.onrender.com/data";
 let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
+
+
 async function fetchData() {
   try {
     let ran = Math.floor(Math.random() * (21 - 1)) + 1;
-    let res = await fetch(`http://localhost:3000/data?_page=${ran}&_per_page=23`);
+    let res = await fetch(`${Dataurl}?_page=${ran}&_limit=23`);
     let dat = await res.json();
-    appendDatafirst(dat.data);
+    appendDatafirst(dat);
     // console.log(dat.data);
   } catch (err) {
     console.log(err);
@@ -17,9 +19,9 @@ async function fetchData() {
 async function fetchDatathird() {
   try {
     let ran = Math.floor(Math.random() * (100 - 1)) + 1;
-    let res = await fetch(`http://localhost:3000/data?_page=${ran}&_per_page=5`);
+    let res = await fetch(`${Dataurl}?_page=${ran}&_limit=5`);
     let dat = await res.json();
-    appendDatathird(dat.data)
+    appendDatathird(dat);
 
     // console.log(dat);
   } catch (err) {
@@ -30,10 +32,10 @@ function appendDatathird(data) {
   let count = 1;
 
   for (let i = 0; i < 5; i++) {
-    if(data[i].urlToImage){
+    if (data[i].urlToImage) {
       third.append(createCard3(data[i]));
     }
-   
+
     if (count == 2) {
       count = 1;
       // let line = document.createElement("hr");
@@ -49,9 +51,9 @@ let ran = Math.floor(Math.random() * (21 - 1)) + 1;
 async function fetchData2() {
   try {
     let ran = Math.floor(Math.random() * (21 - 1)) + 1;
-    let res = await fetch(`http://localhost:3000/data?_page=${ran}&_per_page=23`);
+    let res = await fetch(`${Dataurl}?_page=${ran}&_limit=23`);
     let dat = await res.json();
-    appendDataSecond(dat.data);
+    appendDataSecond(dat);
     // console.log(dat.data);
   } catch (err) {
     console.log(err);
@@ -117,13 +119,19 @@ function createcard(data, count, arr, i) {
     icard2.append(img);
     img.src = data.urlToImage;
     // icard2.style.width = "50%";
-    img.style.width = "100%";
+    img.style.width = "90%";
+    img.style.minWidth="300px"
+    img.style.maxWidth ="500px";
+    img.style.maxHeight ="80%";
     // img.style.height="200px"
   } else if (count == 2 && !data.urlToImage) {
     icard2.append(img);
     img.src = arr[i - 1].urlToImage;
     // icard2.style.width = "50%";
     img.style.width = "90%";
+    img.style.minWidth="300px"
+    img.style.maxWidth ="500px";
+    img.style.maxHeight ="80%";
     // img.style.height="200px"
   }
   icard2.style.position = "absolute";
@@ -135,8 +143,7 @@ function createcard(data, count, arr, i) {
 fetchData();
 
 fetchData2();
-
-fetchDatathird()
+fetchDatathird();
 function createcard2(data) {
   let card = document.createElement("div");
   card.classList.add("card2");
@@ -175,7 +182,7 @@ function createcard2(data) {
   return card;
 }
 
-function createCard3(data){
+function createCard3(data) {
   let card = document.createElement("div");
   card.classList.add("card3");
   let icard1 = document.createElement("div");
@@ -201,17 +208,15 @@ function createCard3(data){
 
   icard1.style.width = "700px";
 
-    icard2.append(img);
-    icard2.classList.add("timg");
-    img.src = data.urlToImage;
-    // icard2.style.width = "50%";
-    img.style.width = "200px";
-    // img.style.height="200px"
-  
+  icard2.append(img);
+  icard2.classList.add("timg");
+  img.src = data.urlToImage;
+  // icard2.style.width = "50%";
+  img.style.width = "200px";
+  // img.style.height="200px"
 
   card.append(icard1, icard2);
   return card;
 }
 
 
-console.log(jsonDate);
