@@ -6,19 +6,25 @@
   }
   #container{
     display: grid;
-    grid-template-areas: "a1 a1 a1 a1 a2";
+    grid-template-areas: "a1 a1 a1 a1 a2"
+    "a3 a3 a3 a3 a2"
+    ". . . . a2";
 
   }
   #first{
 grid-area: a1;
-border: 1px solid black;
   padding: 10px 5px 10px 10px ;
   box-sizing: content-box;
   }
   #second{
     grid-area: a2;
-    border: 1px solid black;
-    height: 200px;
+   display: grid;
+   justify-content: center; 
+  }
+  #third{
+    grid-area: a3;
+   display: grid;
+   justify-content: center; 
   }
 
   .card1{
@@ -33,9 +39,9 @@ border: 1px solid black;
     left: -100px;
   } */
   .icard2{
-    top: 50%;
-  left: 55%;
-  transform: translate(-0%, -10%);
+    top: 30%;
+  left: 45%;
+  transform: translate(-0%, -12%);
   }
 .details>a{
   text-decoration: none;
@@ -45,12 +51,21 @@ border: 1px solid black;
   text-decoration: none;
   color: black;
 }
+.title>a:hover{
+  text-decoration: underline;
+}
 .card2{
   width: 300px;
-  margin: auto;
-  text-align: center;
-  
+ justify-content: center;
+
 }
+.card3{
+  display: flex;
+  justify-content: space-around;
+}
+
+
 .simg{
-  margin: auto;
+ margin-inline: auto;
 }
+

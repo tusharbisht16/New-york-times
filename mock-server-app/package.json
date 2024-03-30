@@ -1,23 +1,16 @@
 {
-  "name": "new-york-times",
+  "name": "mock_server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --watch database.json"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tusharbisht16/New-york-times.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tusharbisht16/New-york-times/issues"
-  },
-  "homepage": "https://github.com/tusharbisht16/New-york-times#readme",
   "dependencies": {
-    "json-server": "^1.0.0-alpha.23"
+    "json-server": "^0.16.1"
   }
 }
