@@ -250,11 +250,11 @@ button:hover{
  }
 
 
- #buisness:hover,#container3>span#audio:hover+.worlda{
+ #buisness:hover,#container3>span#audio:hover+worlda{
 
     display: grid;
  }
- #container3 div.worlda{
+ #container3 div#worlda{
     height:50%;
     width:100%;
     display: none;
