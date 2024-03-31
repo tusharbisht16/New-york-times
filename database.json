@@ -1,5 +1,175 @@
 {
- "stock": [{"id":1,"stock":"PFSI","cap":"$387.13M"},
+  "data2": [
+    {
+      "Topic": "World News",
+      "topicurl": "https://www.nytimes.com/international/section/world",
+      "url1": "https://www.nytimes.com/2024/03/28/world/middleeast/gaza-shifa-hospital-israel-hostages.html",
+      "title1": "Fighting Rages Around Two Gaza Hospitals as Pressure on Israel Rises",
+      "imgurl": "https://static01.nyt.com/images/2024/03/28/multimedia/28mideast-ledeall-top/28mideast-briefing-carousel-cjzk-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/world/africa/south-africa-bus-crash.html",
+      "title2": "8-Year-Old Survives Bus Plunge Off Bridge That Left 45 People Dead",
+      "url3": "https://www.nytimes.com/2024/03/28/world/americas/haiti-gang-violence-dead.html",
+      "title3": "‘Cataclysmic Situation’ in Haiti Leaves 1,500 Dead in Gang Violence"
+    },
+    {
+      "Topic": "U.S. News",
+      "topicurl": "https://www.nytimes.com/international/section/us",
+      "url1": "https://www.nytimes.com/2024/03/29/us/politics/biden-donors-new-york.html",
+      "title1": "Behind Closed Doors, Biden Campaign Gathers Major Donors in New York",
+      "imgurl": "https://static01.nyt.com/images/2024/03/29/multimedia/29pol-biden-money-topart-vwct/29pol-biden-money-topart-vwct-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/29/us/baltimore-francis-scott-key-bridge.html",
+      "title2": "As Bridge Cleanup Gets Underway, Officials Warn of ‘Daunting’ Process",
+      "url3": "https://www.nytimes.com/video/us/politics/100000009385516/trump-legal-fees.html",
+      "title3": "How Trump Paid $100 Million in Legal Fees"
+    },
+    {
+      "Topic": "U.S. Politics",
+      "topicurl": "https://www.nytimes.com/international/section/politics",
+      "url1": "https://www.nytimes.com/video/us/politics/100000009385516/trump-legal-fees.html",
+      "title1": "How Trump Paid $100 Million in Legal Fees",
+      "imgurl": "https://static01.nyt.com/images/2024/03/29/us/politics/HOMEPAGE-THUMBNAIL-Headshot-3/HOMEPAGE-THUMBNAIL-Headshot-3--threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/29/us/politics/biden-donors-new-york.html",
+      "title2": "Behind Closed Doors, Biden Campaign Gathers Major Donors in New York",
+      "url3": "https://www.nytimes.com/2024/03/28/us/politics/crystal-mason-texas-voting-acquitted.html",
+      "title3": "Woman Who Received 5-Year Sentence in Voter Fraud Case Is Acquitted"
+    },
+    {
+      "Topic": "New York",
+      "topicurl": "https://www.nytimes.com/international/section/nyregion",
+      "url1": "https://www.nytimes.com/2024/03/28/nyregion/glue-trap-rodents-nyc.html",
+      "title1": "Are Glue Traps Too Cruel to Use in the Fight Against Mice and Rats?",
+      "imgurl": "https://static01.nyt.com/images/2024/03/27/multimedia/27glue-traps-gmhk/27glue-traps-gmhk-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/nyregion/nypd-officer-shooting-charges-rivera.html",
+      "title2": "Man Is Charged With Murder in Fatal Shooting of N.Y.P.D. Officer",
+      "url3": "https://www.nytimes.com/2024/03/28/nyregion/subway-shoving-manhattan-safety.html",
+      "title3": "The Challenge of Making New York’s 472 Subway Stations Safer"
+    },
+    {
+      "Topic": "Business",
+      "topicurl": "https://www.nytimes.com/international/section/business",
+      "url1": "https://www.nytimes.com/2024/03/28/business/boeing-quality-problems-speed.html",
+      "title1": "‘Shortcuts Everywhere’: How Boeing Favored Speed Over Quality",
+      "imgurl": "https://static01.nyt.com/images/2024/03/21/multimedia/00boeing-01-gkmz/00boeing-01-gkmz-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/technology/sam-bankman-fried-sentenced.html",
+      "title2": "Sam Bankman-Fried Sentenced to 25 Years in Prison",
+      "url3": "https://www.nytimes.com/2024/03/28/business/economy/fast-food-minimum-wage-california.html",
+      "title3": "‘Winners and Losers’ as $20 Fast-Food Wage Nears in California"
+    },
+    {
+      "Topic": "Technology",
+      "topicurl": "https://www.nytimes.com/international/section/technology",
+      "url1": "https://www.nytimes.com/2024/03/28/technology/sam-bankman-fried-sentenced.html",
+      "title1": "Sam Bankman-Fried Sentenced to 25 Years in Prison",
+      "imgurl": "https://static01.nyt.com/images/2024/03/25/multimedia/00sbf-sentence-mczb/00sbf-sentence-mczb-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/technology/sam-bankman-fried-white-collar-sentences.html",
+      "title2": "How Sam Bankman-Fried’s Sentence Compares With Other White-Collar Cases",
+      "url3": "https://www.nytimes.com/2024/03/28/technology/personaltech/smart-glasses-ray-ban-meta.html",
+      "title3": "Meta’s Smart Glasses Are Becoming Artificially Intelligent. We Took Them for a Spin."
+    },
+    {
+      "Topic": "Science",
+      "topicurl": "https://www.nytimes.com/international/section/science",
+      "url1": "https://www.nytimes.com/2024/03/28/science/delta-iv-heavy-rocket-final-launch.html",
+      "title1": "A Fiery Finale for a Rocket That Brings the Heat",
+      "imgurl": "https://static01.nyt.com/images/2024/03/28/science/28sci-delta-launch3/28sci-delta-launch3-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/27/science/jane-goodall-90-birthday-dogs.html",
+      "title2": "Jane Goodall Is More of a Dog Person, Actually",
+      "url3": "https://www.nytimes.com/2024/03/26/science/sandworm-cambrian-dune.html",
+      "title3": "Ancient ‘Dune’-like Sandworm Existed Far Longer Than Thought"
+    },
+    {
+      "Topic": "Sports",
+      "topicurl": "https://www.nytimes.com/international/section/sports",
+      "url1": "https://theathletic.com/5369796/2024/03/27/dj-burns-nc-state-sweet-16-march-madness/",
+      "title1": "Opposing Fans Tried to Body Shame Him. Now, He’s a March Madness Hero.",
+      "imgurl": "https://static01.nyt.com/images/2024/03/27/multimedia/tamc-032724-dj-burns/tamc-032724-dj-burns-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://theathletic.com/5367155/2024/03/27/nfl-short-motion-play-adoption/",
+      "title2": "The New Play That Swept Through the N.F.L.: ‘Everybody Is Copying It’",
+      "url3": "https://theathletic.com/5368907/2024/03/26/sweet-16-predictions-lsu-iowa/",
+      "title3": "The Women’s Sweet 16 Is Set, and an Epic Rematch Is Looming"
+    },
+    {
+      "Topic": "Obituaries",
+      "topicurl": "https://www.nytimes.com/international/section/obituaries",
+      "url1": "https://www.nytimes.com/2024/03/28/arts/robert-moskowitz-dead.html",
+      "title1": "Robert Moskowitz, Abstract Painter of New York’s Skyscrapers, Dies at 88",
+      "imgurl": "https://static01.nyt.com/images/2024/03/27/multimedia/27Moskowitz--02-mbzp/27Moskowitz--02-mbzp-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/business/linda-bean-dead.html",
+      "title2": "Linda Bean, an L.L. Bean Heir and a Conservative Donor, Dies at 82",
+      "url3": "https://www.nytimes.com/2024/03/28/books/vernor-vinge-dead.html",
+      "title3": "Vernor Vinge, Innovative Science Fiction Novelist, Dies at 79"
+    },
+    {
+      "Topic": "The Upshot",
+      "topicurl": "https://www.nytimes.com/international/section/upshot",
+      "url1": "https://www.nytimes.com/interactive/2024/03/28/upshot/baltimore-bridge-ship-force.html",
+      "title1": "Force of Ship Impact Was on the Scale of a Rocket Launch",
+      "imgurl": "https://static01.nyt.com/images/2024/03/28/multimedia/2024-03-26-up-baltimore-bridge-index/2024-03-26-up-baltimore-bridge-index-threeByTwoSmallAt2X.png?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/27/upshot/biden-trump-primary-vote.html",
+      "title2": "New Georgia Data Gives Insight on Primaries, Polls and Possibly November",
+      "url3": "https://www.nytimes.com/2024/03/23/upshot/trump-biden-political-realignment.html",
+      "title3": "Are We in the Midst of a Political Realignment?"
+    },
+
+    {
+      "Topic": "Climate and Environment",
+      "topicurl": "https://www.nytimes.com/international/section/climate",
+      "url1": "https://www.nytimes.com/2024/03/28/climate/chickens-egg-industry-humane.html",
+      "title1": "A Simple New Technique Could Make Your Eggs More Humane",
+      "imgurl": "https://static01.nyt.com/images/2024/03/28/climate/28CLI-SAVE-CHICKS/28CLI-SAVE-CHICKS-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/climate/endangered-species-rules-regulations.html",
+      "title2": "Biden Administration Restores Wildlife Protections Weakened Under Trump",
+      "url3": "https://www.nytimes.com/2024/03/28/climate/new-england-coal-plants.html",
+      "title3": "The Last Coal-Fired Power Plants in New England Are to Close"
+    },
+
+    {
+      "Topic": "Education",
+      "topicurl": "https://www.nytimes.com/international/section/education",
+      "url1": "https://www.nytimes.com/2024/03/24/us/politics/kenneth-marcus-college-antisemitism-complaints.html",
+      "title1": "The Man Who Helped Redefine Campus Antisemitism",
+      "imgurl": "https://static01.nyt.com/images/2024/03/24/multimedia/00nat-marcus-kzqf/00nat-marcus-kzqf-threeByTwoSmallAt2X-v2.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/26/us/birmingham-southern-college-closing.html",
+      "title2": "Birmingham-Southern College to Close After Failing to Secure State Loan",
+      "url3": "https://www.nytimes.com/interactive/2024/03/08/us/sat-online-quiz.html",
+      "title3": "Here’s What It’s Like to Take the New SAT"
+    },
+    {
+      "Topic": "Health",
+      "topicurl": "https://www.nytimes.com/international/section/health",
+      "url1": "https://www.nytimes.com/2024/03/28/health/children-migrants-border-health.html",
+      "title1": "Health Concerns Mount for Migrant Children at Outdoor Holding Sites",
+      "imgurl": "https://static01.nyt.com/images/2024/03/26/multimedia/00-immig-kids-01-pmhq/00-immig-kids-01-pmhq-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/28/health/trisomy-18-abortion.html",
+      "title2": "‘A Chance to Live’: How 2 Families Faced a Catastrophic Birth Defect",
+      "url3": "https://www.nytimes.com/2024/03/25/health/abortion-pills.html",
+      "title3": "Use of Abortion Pills Has Risen Significantly Post Roe, Research Shows"
+    },
+    {
+      "Topic": "Reader Center",
+      "topicurl": "https://www.nytimes.com/international/section/reader-center",
+      "url1": "https://www.nytimes.com/2024/03/24/insider/an-editor-who-makes-times-visuals-accessible-to-all.html",
+      "title1": "An Editor Who Makes Times Visuals Accessible to All",
+      "imgurl": "https://static01.nyt.com/images/2024/03/24/pageoneplus/24a2_insider-02/24a2_insider-02-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/2024/03/16/insider/hitting-the-slopes-with-a-wild-and-skilled-old-bunch.html",
+      "title2": "Hitting the Slopes With a Wild, and Skilled, ‘old’ Bunch",
+      "url3": "https://www.nytimes.com/2024/03/16/insider/the-tinge-of-stained-glass.html",
+      "title3": "The Tinge of Stained Glass"
+    },
+    {
+      "Topic": "Explore Times Events",
+      "topicurl": "https://www.nytimes.com/international/spotlight/nyt-events",
+      "url1": "https://www.nytimes.com/2023/11/29/business/dealbook/elon-musk-advertisers-blackmail-iger.html",
+      "title1": "Elon Musk Uses a Crude Insult to Slam Advertisers for Pulling Back From X.",
+      "imgurl": "https://static01.nyt.com/images/2024/01/23/multimedia/23pol-Musk-Elections-topart-qkft/23pol-Musk-Elections-topart-qkft-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale&width=400",
+      "url2": "https://www.nytimes.com/live/2023/11/29/business/dealbook-summit-news",
+      "title2": "DealBook Summit: Global and Business Leaders Face Questions at New York Times Forum",
+      "url3": "https://www.nytimes.com/2023/09/22/opinion/climate-change-turtles-refugees.html",
+      "title3": "The Turtle Mothers Have Come Ashore to Ask About an Unpaid Debt"
+    }
+  ]
+
+,"stock": [{"id":1,"stock":"PFSI","cap":"$387.13M"},
  {"id":2,"stock":"PVTD","cap":"$9.38B"},
  {"id":3,"stock":"ENLK","cap":"$5.52B"},
  {"id":4,"stock":"PTIE","cap":"$27.03M"},
