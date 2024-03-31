@@ -3,12 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newyork Times</title>
+    <title>New York Times</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+    <style>
+        /* Styles for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0; 
+            width: 300px;
+            height: 100vh;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+            overflow-y: auto; 
+        }
+        /* Styles for the close button */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            
+        }
+        #subscribe-btn{
+          width:90%;
+          color:white;
+          padding:10px;
+          background-color: black;
+          border-radius: 8px;
+        }
+        .a-links{
+            text-decoration: none;
+            color: #222222;
+            font-style: unset;
+
+
+        }
+        .email-addres{
+            text-decoration: underline;
+            color:black;
+        }
+        #emailgetfromlocal{
+            text-decoration: underline;
+            font-weight: 800;
+        }
+        .titles-h2h3{
+            font-size: 17px;
+            margin-top: 30px;;
+        }
+        .log-out{
+            
+            width:70%;
+            text-decoration: none;
+            border:1px solid;
+            padding:10px 20px 10px 20px;
+            color:white;
+            background-color: black;
+            font-size: 16px;
+            border-radius: 10px;;
+        }
+    
+    </style>
 </head>
 
 <body>
-      <a href="login.html" target="_self">Login Button</a>
+    <button id="login-button" class="login-button">Login</button>
 
+    <!-- Popup window -->
+    <div id="popup" class="popup">
+        <span id="emailgetfromlocal" ></span>
+        <span class="close" onclick="closePopup()">
+        <span class="material-symbols-outlined">close</span>
+        </span>
+        
+        <h2 class="titles-h2h3">Good afternoon.</h2>
+        <p>The email you logged in with isn’t associated with a News subscription and has limited access to articles.</p>
+        <button id="subscribe-btn">Subscribe for more access</button>
+        <p><b>Already subscribed?</b> <span> <a href="login.html" class="email-addres">Try a different email</a></span></p>
+
+        <hr>
+        <a class="a-links" href="https://www.nytimes.com/account?source=vi.mum">Account Setting</a>
+        <br>
+
+        <h3 class="titles-h2h3">YOUR CONTENT</h3>
+          <hr>
+        <a class="a-links" href="https://www.nytimes.com/saved">Saved articles</a><br>
+        <a class="a-links" href="https://www.nytimes.com/account/settings?source=vi.mum">Newsletters</a>
+        
+        
+        <h3 class="titles-h2h3">GET SUPPORT</h3>
+        <hr>
+        <a class="a-links" href="https://help.nytimes.com/hc/en-us?referrer=masthead-user-modal">Help Center</a>
+       <br>
+       <br>
+
+         
+       <br><br>
+        <a class="log-out" href="mainIndex.html" id="logout-link">Log out</a>
+    </div>
+
+    <script>
+
+       let email = document.getElementById("emailgetfromlocal");
+
+
+        let loginButton = document.getElementById("login-button");
+        let getEmail = JSON.parse(localStorage.getItem("emailAddress"));
+        email.textContent= getEmail; //email assign
+        //open the popup
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+        //close the popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        //Event listener for the login button
+        loginButton.addEventListener('click', function() {
+            // If the button value is "Login", redirect to login.html
+            if(loginButton.textContent === 'Login') {
+                window.location.href = "login.html";
+            }
+            // If the button value is "Account", open the popup
+            else if(loginButton.textContent === 'Account') {
+                openPopup();
+            }
+        });
+
+        // Set button value based on whether email is present
+        if(getEmail == null) {
+            loginButton.textContent = 'Login';
+            console.log(loginButton.value +" login");
+        }else{
+            loginButton.textContent = 'Account';
+            console.log(loginButton.value +" Account");
+        }
+
+        //log out clear local storage
+          document.getElementById("logout-link").addEventListener('click', function() {
+            localStorage.removeItem("emailAddress");
+            //set back to login after logout
+            loginButton.textContent = 'Login';
+           
+            closePopup();
+        });
+    </script>
 </body>
 </html>

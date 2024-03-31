@@ -1,51 +1,55 @@
-// let loginForm = document.getElementById('loginForm');
-// let submitButton = loginForm.getElementById('submit');
-// let passwordInput = loginForm.getElementById('password');
+// let userLoginURL = 'https://new-york-times-2.onrender.com/user';
+// --------------------------------------------------------------------
+let submitButton = document.getElementById('submit');
+let passwordInput = document.getElementById('password');
+let emailInput = document.getElementById('email');
 
-// submitButton.addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     var email = document.getElementById('email').value;
-//     passwordInput.style.display = 'block';
-//     console.log
-//     if(email.value !== null){
-//         submitButton.value = 'Submit';
-//     }
+
+//logic on submit click
+submitButton.addEventListener('click', function(event) {
+    event.preventDefault();
     
-//    if(submitButton.value = 'Submit' && passwordInput !== null){
-//     window.location.href = 'breakPage.html';
-//    }
-    
-//    console.log("click");
-//     alert("Email entered: " + email);
+    let email = document.getElementById('email').value;
+    // console.log(email+"console email");
 
-  
-// });
-document.addEventListener('DOMContentLoaded', function(){
-    // Select elements by their IDs
-    let submitButton = document.getElementById('submit');
-    let passwordInput = document.getElementById('password');
-    // Add event listener to the submit button
-    submitButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        
-        var email = document.getElementById('email').value;
-        
+    if(passwordInput.style.display === 'block' && passwordInput.value !== '' && submitButton.value == 'Submit'){
+        let userCredential = localStorage.setItem("emailAddress" ,JSON.stringify(email));
+        console.log(email);
+        window.location.href = 'breakPage.html';
 
-        // Change the value of the submit button to "Submit"
-        submitButton.value = 'Submit';
-
-        // Redirect to 'breakPage.html' if email is entered and password input field is visible
-  if(email.value !== ''){
+    }
+    else if(email.value !== ''){
     passwordInput.style.display = 'block';
-
-
-        if (passwordInput.style.display === 'block' && passwordInput.value !== '') {
-            window.location.href = 'breakPage.html';
-        }
-       
-}
-
-        // Display an alert with the entered email
-        // alert("Email entered: " + email);
-    });
+    submitButton.value = 'Submit';
+    }
+    
 });
+
+// async function postDataToApi() {
+//     try {
+//         let user_data = {
+//             username: emailInput.value,
+//             password: passwordInput.value
+//         };
+//         console.log(user_data);
+
+//         let res = await fetch(userLoginURL, {
+//             method: "POST",
+//             headers: {
+//                 "Content-type": "application/json"
+//             },
+//             body: JSON.stringify(user_data)
+//         });
+
+//         if (res.ok) {
+//             let data = await res.json();
+//             console.log(data);
+//             localStorage.setItem("token", JSON.stringify(data.accessToken));
+//             localStorage.setItem("userID", JSON.stringify(data.username));
+//         } else {
+//             console.error('Error:', res.status);
+//         }
+//     } catch (err) {
+//         console.error(err);
+//     }
+// }

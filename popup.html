@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Example</title>
+<style>
+  /* Styles for the popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0; /* Positioning on the right side */
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  }
+  /* Styles for the close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Button to trigger the popup -->
+<button onclick="openPopup()">Open Popup</button>
+
+<!-- Popup window -->
+<div id="popup" class="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <p>Email</p>
+  <h2>Good afternoon.</h2>
+  <p>The email you logged in with isn’t associated with a News subscription and has limited access to articles.</p>
+  <button>Subscribe for more access</button>
+  <p><b>Already subscribed? Try a different email</b></p>
+
+  <hr>
+ <a href="#">Already subscribed? Try a different email</a>
+<br>
+
+<h3>YOUR CONTENT</h3>
+<hr>
+<a href="#">Saved articles</a><br>
+<a href="#">Newsletters</a>
+<br>
+<br>
+
+<h3>GET SUPPORT</h3>
+<hr>
+<a href="#">Help Center</a>
+<br>
+<br>
+<br>
+
+<a style="color:black; text-decoration:underline" href="#">Log out</a>
+</div>
+
+<script>
+// Function to open the popup
+function openPopup(){
+  document.getElementById("popup").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>
