@@ -5,7 +5,7 @@
   }
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
   #container{
     grid-template-areas: "a1"
       "a3";
@@ -13,7 +13,7 @@
   #second{
     display: none;
   }
-}
+} */
 #container{
   display: grid;
   grid-template-areas:
@@ -34,7 +34,6 @@
 }
 #third {
   grid-area: a3;
-  align-content: space-between;
   display: grid;
   gap: 30px;
   > div {

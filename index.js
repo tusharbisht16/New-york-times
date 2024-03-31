@@ -4,10 +4,10 @@ let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
 let firstChild= document.getElementsByClassName("")
-
+let defaultImg = "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.insider.com%2F62c831d38045920019ae2c5a%3Fwidth%3D700&tbnid=IVmzvfaMhrHj2M&vet=12ahUKEwiN7sSCzZ6FAxW4hWMGHcT0BZUQMygBegQIARBQ..i&imgrefurl=https%3A%2F%2Fwww.businessinsider.com%2Fbiden-stops-short-of-declaring-a-national-climate-emergency-2022-7&docid=NaonEPVp0eY3NM&w=700&h=525&q=joe%20images%20with%20short%20image%20address&ved=2ahUKEwiN7sSCzZ6FAxW4hWMGHcT0BZUQMygBegQIARBQ"
 async function fetchData() {
   try {
-    let ran = Math.floor(Math.random() * (21 - 1)) + 1;
+    let ran = Math.floor(Math.random() * (35 - 1)) + 1;
     let res = await fetch(`${Dataurl}?_page=${ran}&_limit=23`);
     let dat = await res.json();
     appendDatafirst(dat);
@@ -18,7 +18,7 @@ async function fetchData() {
 }
 async function fetchDatathird() {
   try {
-    let ran = Math.floor(Math.random() * (55- 1)) + 1;
+    let ran = Math.floor(Math.random() * (80- 1)) + 1;
     let res = await fetch(`${Dataurl}?_page=${ran}&_limit=10`);
     let dat = await res.json();
     appendDatathird(dat);
@@ -50,7 +50,7 @@ let ran = Math.floor(Math.random() * (21 - 1)) + 1;
 
 async function fetchData2() {
   try {
-    let ran = Math.floor(Math.random() * (21 - 1)) + 1;
+    let ran = Math.floor(Math.random() * (35 - 1)) + 1;
     let res = await fetch(`${Dataurl}?_page=${ran}&_limit=23`);
     let dat = await res.json();
     appendDataSecond(dat);
@@ -59,6 +59,18 @@ async function fetchData2() {
     console.log(err);
   }
 }
+async function getData() {
+  try {
+    let res = await fetch();
+    let dat = await res.json();
+  
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+
+
 
 function appendDatafirst(data) {
   let count = 2;
@@ -122,8 +134,9 @@ function createcard(data, count, arr, i) {
     img.style.width = "90%";
     img.style.minWidth="300px"
     img.style.maxWidth ="500px";
-    img.style.maxHeight ="80%";
+    img.style.maxHeight ="70%";
     // img.style.height="200px"
+    img.onerror = `this.src='${defaultImg}'`
   } else if (count == 2 && !data.urlToImage) {
     icard2.append(img);
     img.src = arr[i - 1].urlToImage;
@@ -131,7 +144,8 @@ function createcard(data, count, arr, i) {
     img.style.width = "90%";
     img.style.minWidth="300px"
     img.style.maxWidth ="500px";
-    img.style.maxHeight ="80%";
+    img.style.maxHeight ="70%";
+    img.onerror = `this.src='${defaultImg}'`
     // img.style.height="200px"
   }
   icard2.style.position = "absolute";
@@ -168,7 +182,7 @@ function createcard2(data) {
 
   icard1.append(title, details);
 
-  icard1.style.width = "360px";
+  icard1.style.width = "270px";
   if (data.urlToImage) {
     icard2.append(img);
     icard2.classList.add("simg");
