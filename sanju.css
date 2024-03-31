@@ -5,20 +5,11 @@ body{
 #container1{
     display: flex;
     text-align: center;
-    /* border: 2px solid red; */
     justify-content: space-around;
     align-items: center;
     font-size: 11px;
-    /* gap:500px; */
     padding:30px;
-    /* cursor: pointer; */
-    /* .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-    } */
+    
 }
 .space{
     margin-left:20px;
@@ -168,18 +159,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worldb{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:20px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:20px;
+    justify-content: center;
+    padding:10px;
+    grid-template-columns: repeat(5,1fr);
  }
 
  #buisness:hover,#container3>span#art:hover+#worldar{
@@ -187,18 +178,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worldar{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:20px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:20px;
+    justify-content: center;
+    padding:10px;
+    grid-template-columns: repeat(5,1fr);
  }
 
  #buisness:hover,#container3>span#lifestyle:hover+#worldl{
@@ -206,18 +197,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worldl{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:20px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:20px;
+    justify-content: center;
+    padding:10px;
+    grid-template-columns: repeat(5,1fr);
  }
 
  #buisness:hover,#container3>span#games:hover+#worldg{
@@ -225,18 +216,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worldg{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:20px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:20px;
+    justify-content: center;
+    padding:10px;
+    grid-template-columns: repeat(5,1fr);
  }
 
  #buisness:hover,#container3>span#opinion:hover+#worldo{
@@ -244,18 +235,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worldo{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:20px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:20px;
+    justify-content: center;
+    padding:10px;
+    grid-template-columns: repeat(5,1fr);
  }
 
 
@@ -264,18 +255,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worlda{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:70px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:30px;
+    justify-content: space-between;
+    padding:10px;
+    grid-template-columns: repeat(3,1fr);
  }
 
  #buisness:hover,#container3>span#cooking:hover+#worldc{
@@ -283,18 +274,18 @@ button:hover{
     display: grid;
  }
  #container3 div#worldc{
-     height:50%;
-     width:100%;
-     display: none;
-     text-align: center;
-     gap:90px;
-     position:absolute;
-     /* margin-right:-900px;
-     margin-left:500px; */
-     margin-top:80px;
-     justify-content: center;
-     padding:10px;
-     grid-template-columns: repeat(5,1fr);
+    height:50%;
+    width:100%;
+    display: none;
+    text-align: center;
+    gap:20px;
+    position:absolute;
+    /* margin-right:-900px;
+    margin-left:500px; */
+    margin-top:20px;
+    justify-content: center;
+    padding:10px;
+    grid-template-columns: repeat(5,1fr);
  }
  
 
@@ -327,17 +318,17 @@ button:hover{
  }
  #container3 div#worldw{
     height:50%;
-    width:100%;
-    display: none;
-    text-align: center;
-    gap:90px;
-    position:absolute;
-    /* margin-right:-900px;
-    margin-left:500px; */
-    margin-top:100px;
-    justify-content: center;
-    padding:10px;
-    grid-template-columns: repeat(3,1fr);
+     width:100%;
+     display: none;
+     text-align: center;
+     gap:70px;
+     position:absolute;
+     /* margin-right:-900px;
+     margin-left:500px; */
+     margin-top:30px;
+     justify-content: space-between;
+     padding:10px;
+     grid-template-columns: repeat(3,1fr);
 }
 
 
@@ -348,17 +339,18 @@ button:hover{
  }
  #container3 div#worlda{
     height:50%;
-    width:100%;
-    display: none;
-    text-align: center;
-    gap:90px;
-    position:absolute;
-    /* margin-right:-900px;
-    margin-left:500px; */
-    margin-top:100px;
-    justify-content: center;
-    padding:10px;
-    grid-template-columns: repeat(3,1fr);
+    height:50%;
+     width:100%;
+     display: none;
+     text-align: center;
+     gap:70px;
+     position:absolute;
+     /* margin-right:-900px;
+     margin-left:500px; */
+     margin-top:30px;
+     justify-content: space-between;
+     padding:10px;
+     grid-template-columns: repeat(3,1fr);
 }
 
 
