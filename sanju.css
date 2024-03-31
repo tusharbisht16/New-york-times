@@ -250,11 +250,11 @@ button:hover{
  }
 
 
- #buisness:hover,#container3>span#audio:hover+#worlda{
+ #buisness:hover,#container3>span#audio:hover+.worlda{
 
     display: grid;
  }
- #container3 div#worlda{
+ #container3 div.worlda{
     height:50%;
     width:100%;
     display: none;
@@ -312,7 +312,7 @@ button:hover{
  }
 
 
- #worlda:hover,#container3>span.wire:hover+#worldw{
+ .worlda:hover,#container3>span.wire:hover+#worldw{
 
     display: grid;
  }
@@ -333,11 +333,11 @@ button:hover{
 
 
 
- #worlda:hover,#container3>span.athletic:hover+#worlda{
+ .worlda:hover,#container3>span.athletic:hover+.worlda{
 
     display: grid;
  }
- #container3 div#worlda{
+ #container3 div.worlda{
     height:50%;
     height:50%;
      width:100%;
