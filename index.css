@@ -9,7 +9,7 @@
     grid-template-areas: "a1 a1 a1 a1 a2"
     "a3 a3 a3 a3 a2"
     ". . . . a2";
-
+ gap: 30px;
   }
   #first{
 grid-area: a1;
@@ -25,6 +25,11 @@ grid-area: a1;
     grid-area: a3;
    display: grid;
    justify-content: center; 
+   gap: 30px;
+   >div{
+    border-bottom: 1px solid black;
+   }
+   
   }
 
   .card1{
@@ -68,4 +73,5 @@ grid-area: a1;
 .simg{
  margin-inline: auto;
 }
+
 

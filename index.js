@@ -3,7 +3,7 @@ let Dataurl = "https://new-york-times-2.onrender.com/data";
 let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
-
+let firstChild= document.getElementsByClassName("")
 
 async function fetchData() {
   try {
