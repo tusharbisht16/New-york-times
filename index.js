@@ -18,8 +18,8 @@ async function fetchData() {
 }
 async function fetchDatathird() {
   try {
-    let ran = Math.floor(Math.random() * (100 - 1)) + 1;
-    let res = await fetch(`${Dataurl}?_page=${ran}&_limit=5`);
+    let ran = Math.floor(Math.random() * (55- 1)) + 1;
+    let res = await fetch(`${Dataurl}?_page=${ran}&_limit=10`);
     let dat = await res.json();
     appendDatathird(dat);
 
@@ -31,7 +31,7 @@ async function fetchDatathird() {
 function appendDatathird(data) {
   let count = 1;
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     if (data[i].urlToImage) {
       third.append(createCard3(data[i]));
     }
@@ -77,14 +77,14 @@ function appendDatafirst(data) {
 function appendDataSecond(data) {
   let count = 2;
 
-  for (let i = 1; i < 25; i++) {
+  for (let i = 1; i < 21; i++) {
     if (data[i].urlToImage) {
       second.append(createcard2(data[i], count, data, i));
     }
     if (count == 3) {
       count = 1;
-      let line = document.createElement("hr");
-      second.append(line);
+      // let line = document.createElement("hr");
+      // second.append(line);
     }
     count++;
   }
@@ -194,9 +194,7 @@ function createCard3(data) {
   ta.href = data.url;
   let details = document.createElement("p");
   let td = document.createElement("a");
-
   details.append(td);
-
   td.href = data.url;
   details.classList.add("details");
   ta.innerText = data.title;

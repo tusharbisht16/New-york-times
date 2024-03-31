@@ -1,77 +1,88 @@
 @media (min-width: 1200px) {
-    .container {
-      max-width: 1220px;
-      margin: auto;
-    }
+  .container {
+    max-width: 1220px;
+    margin: auto;
   }
+}
+
+@media (max-width:768px) {
   #container{
-    display: grid;
-    grid-template-areas: "a1 a1 a1 a1 a2"
-    "a3 a3 a3 a3 a2"
-    ". . . . a2";
- gap: 30px;
-  }
-  #first{
-grid-area: a1;
-  padding: 10px 5px 10px 10px ;
-  box-sizing: content-box;
+    grid-template-areas: "a1"
+      "a3";
   }
   #second{
-    grid-area: a2;
-   display: grid;
-   justify-content: center; 
+    display: none;
   }
-  #third{
-    grid-area: a3;
-   display: grid;
-   justify-content: center; 
-   gap: 30px;
-   >div{
+}
+#container{
+  display: grid;
+  grid-template-areas:
+    "a1 a1 a1 a1 a2"
+    "a3 a3 a3 a3 a2"
+    ". . . . a2";
+  gap: 30px;
+}
+#first {
+  grid-area: a1;
+  padding: 10px 5px 10px 10px;
+  box-sizing: content-box;
+}
+#second {
+  grid-area: a2;
+  display: grid;
+  justify-content: center;
+}
+#third {
+  grid-area: a3;
+  align-content: space-between;
+  display: grid;
+  gap: 30px;
+  > div {
+    /* display: grid; */
+    /* gap: 10px; */
     border-bottom: 1px solid black;
-   }
-   
   }
+}
 
-  .card1{
-    display: flex;
-  
-    justify-content: space-between;
-    position: relative;
-  }
-  /* .img1{
+
+.card1 {
+  display: flex;
+
+  justify-content: space-between;
+  position: relative;
+}
+/* .img1{
     position: relative;
     top: 30%;
     left: -100px;
   } */
-  .icard2{
-    top: 30%;
+.icard2 {
+  top: 30%;
   left: 45%;
   transform: translate(-0%, -12%);
-  }
-.details>a{
+}
+.details > a {
   text-decoration: none;
   color: black;
 }
-.title>a{
+.title > a {
   text-decoration: none;
   color: black;
 }
-.title>a:hover{
+.title > a:hover {
   text-decoration: underline;
 }
-.card2{
+.card2 {
   width: 300px;
- justify-content: center;
-
+  justify-content: center;
 }
-.card3{
+.card3 {
   display: flex;
   justify-content: space-around;
 }
 
-
-.simg{
- margin-inline: auto;
+.simg {
+  margin-inline: auto;
 }
 
 
