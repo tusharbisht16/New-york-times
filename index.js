@@ -406,7 +406,7 @@ function createdCard(data) {
   topic.append(topicurl);
   let img = document.createElement('img');
   img.src = data.imgurl;
-
+  topic.style.marginBottom="3px";
   let url1 = document.createElement('a');
   let url2 = document.createElement('a');
   let url3 = document.createElement('a');

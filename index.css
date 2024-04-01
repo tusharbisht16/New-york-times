@@ -5,27 +5,30 @@
   }
 }
 
-@media (max-width:768px) {
-  #second{
-    display: none;
+@media (max-width: 768px) {
+  #second {
+    display: none !important;
   }
 }
 #container {
   display: flex;
   margin-top: 30px;
-
   gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
 }
+
+
 #first {
   padding: 10px 5px 10px 10px;
   box-sizing: content-box;
-
+  margin-bottom: 40px;
 }
 #second {
   display: grid;
   justify-content: center;
-  padding-left:20px ;
-  border-left: 1px solid black;
+  padding-left: 20px;
+  border-left: 1px solid grey;
 }
 #third {
   display: grid;
@@ -36,7 +39,9 @@
     border-bottom: 1px solid black;
   }
 }
-
+#third >div:nth-last-child(1){
+  border-bottom: none;
+}
 .card1 {
   display: flex;
   justify-content: space-between;
@@ -58,6 +63,7 @@
 }
 .title > a {
   text-decoration: none;
+
   color: black;
 }
 .title > a:hover {
@@ -355,7 +361,6 @@ button:hover {
 #world:hover,
 #container3 > span.x:hover + #world {
   display: grid;
-  
 }
 
 #container3 div#world {
@@ -419,18 +424,107 @@ button:hover {
 #tfirst {
   display: grid;
   gap: 30px;
+  margin-bottom: 40px;
 }
-#firstmain {
-  display: grid;
-}
+
 .topics {
   width: 215px;
 }
 #fourth {
   display: flex;
   flex-wrap: wrap;
- justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
-#fourth>div> img {
+#fourth > div > img {
   width: 215px;
+}
+/* Vaibhav css */
+
+footer img {
+  height: 35px;
+  margin-left: 20px;
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px;
+    margin: auto;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer > div > ul {
+  margin: 0;
+  list-style: none;
+}
+ul > :nth-child(1) {
+  font: 16px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+ul > :nth-child(1):hover {
+  color: rgb(238, 157, 51);
+}
+ul > li {
+  line-height: 25px;
+  width: fit-content;
+  font-size: 13px;
+  color: #000000;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+#forth {
+  border-left: 1px solid rgb(199, 194, 194);
+}
+.icon {
+  font-size: 14px;
+  font-weight: bolder;
+}
+ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: brown;
+}
+#copyrite {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 10px;
+}
+#copyrite a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(68, 66, 66);
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+#copyrite > a:hover {
+  text-decoration: underline;
+}
+hr {
+  margin: 0;
+}
+
+@media screen and (width<=770px) {
+  footer > div {
+    display: none;
+  }
+  #responsive {
+    display: block;
+    font: 14px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+    line-height: 50px;
+  }
+}
+@media screen and (width>= 771px) {
+  #responsive {
+    display: none;
+  }
 }
