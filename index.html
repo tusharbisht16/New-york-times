@@ -5,16 +5,1188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
+  <!-- Sanju's code starts from here -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <script src="https://kit.fontawesome.com/7fdd60f25a.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="container">
-      <div id="container">
-        <div id="first"></div>
-        <div id="second"></div>
-        <div id="third"></div>
-        <div id="fourth"></div>
+  <header class = "container">
+    <!-- this is header and navigation bar -->
+    <div id="container1"  class = "container">
+      <div>
+        <span id="searchbtn" class="material-symbols-outlined">search</span>
+
+        <span class="display" id="display">
+          <input id="input" type="text" placeholder="SEARCH" />
+          <button id="search">
+            <a href="./search.html"> GO </a>
+          </button>
+        </span>
       </div>
-    </main>
+
+      <div>
+        <span>
+          <b>U.S.</b>
+        </span>
+        <span class="space">INTERNATIONAL</span>
+        <span class="space">CANADA</span>
+        <span class="space">ESPANOL</span>
+        <span class="space">JAPAN</span>
+      </div>
+      <div>
+        <button>PLAY SPELLING BEE</button>
+        <button class="space"><a>LOG IN</a></button>
+      </div>
+    </div>
+
+    <div id="container2"  class = "container">
+      <div id  ="subDate">
+        <div id= "date"></div>
+        <p>Today's Paper</p>
+      </div>
+      <img style = "margin-bottom:30px;"
+        src="./image/newyork.png"
+        width="40%"
+        alt=""
+      />
+      <div id="stock"></div>
+    </div>
+    <hr>
+    <div id="container3"  class = "container">
+      <span id="toggleVisibility"
+        >U.S. <i class="fa-solid fa-caret-down"></i>
+      </span>
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="us">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 12px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex;font-size: 12px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px;font-size: 12px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 12px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="x"
+        >World <i class="fa-solid fa-caret-down"></i>
+      </span>
+      <!-- this is world category  -->
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="world">
+        <div style="width: 400px">
+          <h2>SECTIONS</h2>
+          <p>World</p>
+          <p>Africa</p>
+          <p>America</p>
+          <p>Asia</p>
+          <p>Health</p>
+          <p>Science</p>
+        </div>
+        <div style="width: 400px">
+          <h2>TOP STORIES</h2>
+          <p>Israel-Hamas War</p>
+          <p>Russia-Ukraine War</p>
+        </div>
+        <div id="card">
+          <h2>NEWSLETTERS</h2>
+          <div class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.awCvJ1gReYh4tWseENeY8AHaE_?w=278&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Morning Briefing:Europe</h3>
+              <p>Get what you need to know to start your day.</p>
+            </div>
+          </div>
+          <div  class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.KaSkvQ96AOBNAUdfVgWtcAHaE8?w=280&h=186&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Interpreter</h3>
+              <p>Original analysis on the week's biggest global stories</p>
+            </div>
+          </div>
+
+          <div class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.87rC-vQdkf1I5qv74_2LjwHaHp?w=164&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Your Places: Global Update</h3>
+              <p>The latest news for any part of the world you select.</p>
+            </div>
+          </div>
+
+          <div  class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.stWAWw2BWM1jDIOmXQhPqAHaE2?w=199&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Canada Letter</h3>
+              <p>Backstories and analysis from our candian correspondants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span id="buisness"
+        >Buisness <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldb">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>Buisness</p>
+          <p>Economy</p>
+          <p>Media</p>
+          <p>Finance and Markets</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>TOP STORIES</h3>
+          <p>U.S.Economy</p>
+          <p>Stock Market</p>
+          <p>Congress</p>
+          <p>Artificial Intelligence</p>
+        </div>
+        
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span id = "art"
+        >Arts <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldar">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <span id = "lifestyle"
+        >Lifestyle
+        <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldl">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span id="opinion"
+        >Opinion <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+
+      
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldo">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span id = "audio"
+        >Audio<i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worlda">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <span id="games"
+        >Games <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldg">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <span id="cooking"
+        >Cooking <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldc">
+        <!-- this is us class of us button   -->
+        <div>
+          <!-- this is us group  -->
+          <h3>SECTIONS</h3>
+          <p>U.S.</p>
+          <p>Politics</p>
+          <p>New York</p>
+          <p>California</p>
+          <p>Education</p>
+          <p>Health</p>
+          <p>Buisness</p>
+          <p>Tech</p>
+          <p>Magazine</p>
+        </div>
+        <div>
+          <!-- this is us politics  -->
+          <h3>U.S. Politics</h3>
+          <p>2024 Electronics</p>
+          <p>Supreme Court</p>
+          <p>Congress</p>
+          <p>Biden Administration</p>
+        </div>
+        <div>
+          <!-- this is top stories  -->
+          <h3>TOP STORIES</h3>
+          <p>Trump Investigations</p>
+          <p>Immigration</p>
+          <p>Abortion</p>
+          <p>The Eric Adams Administration</p>
+        </div>
+        <div style="width: 400px">
+          <!-- this is news letter  -->
+          <h2>NEWSLETTERS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheMorning-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Morning</h3>
+              <p>Make sense of the day's news and ideas.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; font-size: 20px">
+            <div>
+              <img
+                src="https://static.nytimes.com/email-images/NYT-Newsletters-TheUpshot-Icon-500px.jpg"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Upshot</h3>
+              <p>Analysis that explains politics,policy and everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 400px">
+          <h2>PODCASTS</h2>
+
+          <div class="card" style="display: flex; gap: 10px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.YAXlTjvtEKchdMVc5laZhwHaE8&w=147&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Daily</h3>
+              <p>The biggest stories of our time, in 20 minutes a day.</p>
+            </div>
+          </div>
+
+          <div class="card" style="display: flex; gap: 20px; font-size: 20px">
+            <div>
+              <img
+                src="https://www.bing.com/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&w=145&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                height="100px"
+                width="100px"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <h3>The Run-Up</h3>
+              <p>On the campaign trail with astead Herndon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <span class="wire"
+        >Wirecutter
+        <i class="fa-solid fa-caret-down"></i>
+      </span>
+
+      <!-- this is world category  -->
+      <div style="background-color: #fff; z-index: 1;height: fit-content" id="worldw">
+        <div style="width: 400px">
+          <h2>SECTIONS</h2>
+          <p>World</p>
+          <p>Africa</p>
+          <p>America</p>
+          <p>Asia</p>
+          <p>Health</p>
+          <p>Science</p>
+        </div>
+        <div style="width: 400px">
+          <h2>TOP STORIES</h2>
+          <p>Israel-Hamas War</p>
+          <p>Russia-Ukraine War</p>
+        </div>
+        <div id="card">
+          <h2>NEWSLETTERS</h2>
+          <div class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.awCvJ1gReYh4tWseENeY8AHaE_?w=278&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Morning Briefing:Europe</h3>
+              <p>Get what you need to know to start your day.</p>
+            </div>
+          </div>
+          <div  class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.KaSkvQ96AOBNAUdfVgWtcAHaE8?w=280&h=186&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Interpreter</h3>
+              <p>Original analysis on the week's biggest global stories</p>
+            </div>
+          </div>
+
+          <div class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.87rC-vQdkf1I5qv74_2LjwHaHp?w=164&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Your Places: Global Update</h3>
+              <p>The latest news for any part of the world you select.</p>
+            </div>
+          </div>
+
+          <div  class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.stWAWw2BWM1jDIOmXQhPqAHaE2?w=199&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Canada Letter</h3>
+              <p>Backstories and analysis from our candian correspondants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class = "athletic"
+        >The Athletic
+        <i class="fa-solid fa-caret-down"></i>
+      </span>
+      <!-- this is world category  -->
+      <div style="background-color: #fff; z-index: 1;height: fit-content" class="worlda">
+        <div style="width: 400px">
+          <h2>SECTIONS</h2>
+          <p>World</p>
+          <p>Africa</p>
+          <p>America</p>
+          <p>Asia</p>
+          <p>Health</p>
+          <p>Science</p>
+        </div>
+        <div style="width: 400px">
+          <h2>TOP STORIES</h2>
+          <p>Israel-Hamas War</p>
+          <p>Russia-Ukraine War</p>
+        </div>
+        <div style="width: 400px; ">
+          <h2>NEWSLETTERS</h2>
+          <div class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.awCvJ1gReYh4tWseENeY8AHaE_?w=278&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Morning Briefing:Europe</h3>
+              <p>Get what you need to know to start your day.</p>
+            </div>
+          </div>
+          <div  class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.KaSkvQ96AOBNAUdfVgWtcAHaE8?w=280&h=186&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>The Interpreter</h3>
+              <p>Original analysis on the week's biggest global stories</p>
+            </div>
+          </div>
+
+          <div class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.87rC-vQdkf1I5qv74_2LjwHaHp?w=164&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Your Places: Global Update</h3>
+              <p>The latest news for any part of the world you select.</p>
+            </div>
+          </div>
+
+          <div  class="world2">
+            <div>
+              <img
+                src="https://th.bing.com/th/id/OIP.stWAWw2BWM1jDIOmXQhPqAHaE2?w=199&h=180&c=7&r=0&o=5&pid=1.7"
+                height="70px"
+                width="70px"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Canada Letter</h3>
+              <p>Backstories and analysis from our candian correspondants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </header>
+
+  <!-- Tushar's code starts from here -->
+  <main class="container">
+    <div id="container">
+        <div id="firstmain">
+            <div id="tfirst">
+
+            </div>
+          <div id="first"></div>
+       
+          <div id="third"></div>
+     
+        </div>
+      <div id="second"></div>
+    </div>
+    <div class="container" id="fourth" >
+        
+    </div>
+  </main>
+  <!-- <hr class="double"> -->
+  <!-- footer is here -->
   </body>
+
   <script src="./index.js"></script>
 </html>
