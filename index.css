@@ -1,0 +1,530 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #second {
+    display: none !important;
+  }
+}
+#container {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+
+#first {
+  padding: 10px 5px 10px 10px;
+  box-sizing: content-box;
+  margin-bottom: 40px;
+}
+#second {
+  display: grid;
+  justify-content: center;
+  padding-left: 20px;
+  border-left: 1px solid grey;
+}
+#third {
+  display: grid;
+  gap: 30px;
+  > div {
+    /* display: grid; */
+    /* gap: 10px; */
+    border-bottom: 1px solid black;
+  }
+}
+#third >div:nth-last-child(1){
+  border-bottom: none;
+}
+.card1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/* .img1{
+    position: relative;
+    top: 30%;
+    left: -100px;
+  } */
+.icard2 {
+  top: 30%;
+  left: 45%;
+  transform: translate(-0%, -12%);
+}
+.details > a {
+  text-decoration: none;
+  color: black;
+}
+.title > a {
+  text-decoration: none;
+
+  color: black;
+}
+.title > a:hover {
+  text-decoration: underline;
+}
+.card2 {
+  width: 300px;
+  justify-content: center;
+}
+.card3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.simg {
+  margin-inline: auto;
+}
+
+/* sanju's csss */
+body {
+  margin: 0;
+  padding: 0;
+}
+#container1 {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 11px;
+  padding: 30px;
+}
+.space {
+  margin-left: 20px;
+}
+button {
+  color: white;
+  background-color: rgb(50, 104, 145);
+  padding: 11px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 500px;
+  border: none;
+  cursor: pointer;
+}
+button > a {
+  color: white;
+  background-color: rgba(87, 100, 136, 0.685);
+  font-size: 10px;
+  font-weight: 200;
+  text-decoration: none;
+}
+span,
+img {
+  cursor: pointer;
+}
+.double {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+
+  background: #fff;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+.display {
+  /* display: none; */
+  visibility: hidden;
+}
+
+#subDate {
+  text-align: start;
+  align-self: start;
+}
+#container1 > div:nth-child(2) {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 58;
+  font-size: 11px;
+  font-style: normal;
+  margin-right: 80px;
+}
+#container1 span:hover {
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(241, 239, 239);
+}
+
+button:hover {
+  background-color: rgba(67, 76, 99, 0.685);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+#container2 {
+  display: flex;
+  text-align: center;
+  /* border:1px solid green; */
+  height: 10%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-size: 11px;
+  /* margin-bottom:-50px; */
+}
+#container3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 11px;
+  /* border:1px solid blue; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  position: sticky;
+  top: 0px;
+}
+#us:hover,
+#container3 > span:nth-child(1):hover + #us {
+  display: grid;
+}
+#container3 div#us {
+  height: 50%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+#stock {
+  width: 150px;
+}
+
+#world {
+  display: flex;
+  gap: 50px;
+}
+.world2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#buisness:hover,
+#container3 > span#buisness:hover + #worldb {
+  display: grid;
+}
+#container3 div#worldb {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#buisness:hover,
+#container3 > span#art:hover + #worldar {
+  display: grid;
+}
+#container3 div#worldar {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#buisness:hover,
+#container3 > span#lifestyle:hover + #worldl {
+  display: grid;
+}
+#container3 div#worldl {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#buisness:hover,
+#container3 > span#games:hover + #worldg {
+  display: grid;
+}
+#container3 div#worldg {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#buisness:hover,
+#container3 > span#opinion:hover + #worldo {
+  display: grid;
+}
+#container3 div#worldo {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#buisness:hover,
+#container3 > span#audio:hover + worlda {
+  display: grid;
+}
+#container3 div#worlda {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 70px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 30px;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#buisness:hover,
+#container3 > span#cooking:hover + #worldc {
+  display: grid;
+}
+#container3 div#worldc {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 20px;
+  position: absolute;
+  /* margin-right:-900px;
+  margin-left:500px; */
+  margin-top: 20px;
+  justify-content: center;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#world:hover,
+#container3 > span.x:hover + #world {
+  display: grid;
+}
+
+#container3 div#world {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 70px;
+  position: absolute;
+  /* margin-right:-900px;
+   margin-left:500px; */
+  margin-top: 30px;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.worlda:hover,
+#container3 > span.wire:hover + #worldw {
+  display: grid;
+}
+#container3 div#worldw {
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 70px;
+  position: absolute;
+  /* margin-right:-900px;
+   margin-left:500px; */
+  margin-top: 30px;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.worlda:hover,
+#container3 > span.athletic:hover + .worlda {
+  display: grid;
+}
+#container3 div.worlda {
+  height: 50%;
+  height: 50%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  gap: 70px;
+  position: absolute;
+  /* margin-right:-900px;
+   margin-left:500px; */
+  margin-top: 30px;
+  justify-content: space-between;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.firstcard {
+  display: flex;
+  justify-content: space-around;
+}
+#tfirst {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.topics {
+  width: 215px;
+}
+#fourth {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+#fourth > div > img {
+  width: 215px;
+}
+/* Vaibhav css */
+
+footer img {
+  height: 35px;
+  margin-left: 20px;
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px;
+    margin: auto;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer > div > ul {
+  margin: 0;
+  list-style: none;
+}
+ul > :nth-child(1) {
+  font: 16px;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+ul > :nth-child(1):hover {
+  color: rgb(238, 157, 51);
+}
+ul > li {
+  line-height: 25px;
+  width: fit-content;
+  font-size: 13px;
+  color: #000000;
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+#forth {
+  border-left: 1px solid rgb(199, 194, 194);
+}
+.icon {
+  font-size: 14px;
+  font-weight: bolder;
+}
+ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: brown;
+}
+#copyrite {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 10px;
+}
+#copyrite a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(68, 66, 66);
+  font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+}
+#copyrite > a:hover {
+  text-decoration: underline;
+}
+hr {
+  margin: 0;
+}
+
+@media screen and (width<=770px) {
+  footer > div {
+    display: none;
+  }
+  #responsive {
+    display: block;
+    font: 14px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-family: nyt-franklin, Arial, Helvetica, sans-serif;
+    line-height: 50px;
+  }
+}
+@media screen and (width>= 771px) {
+  #responsive {
+    display: none;
+  }
+}
