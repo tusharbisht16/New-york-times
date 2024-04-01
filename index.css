@@ -186,7 +186,7 @@ button:hover {
   font-style: normal;
   position: sticky;
   top: 0px;
-}
+/* }
 #us:hover,
 #container3 > span:nth-child(1):hover + #us {
   display: grid;
@@ -201,11 +201,12 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
-}
+} */ */
+
 #stock {
   width: 150px;
 }
@@ -220,7 +221,7 @@ button:hover {
   justify-content: center;
 }
 
-#buisness:hover,
+/* #buisness:hover,
 #container3 > span#buisness:hover + #worldb {
   display: grid;
 }
@@ -233,13 +234,13 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
-#buisness:hover,
+/* #buisness:hover,
 #container3 > span#art:hover + #worldar {
   display: grid;
 }
@@ -252,7 +253,7 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
@@ -271,7 +272,7 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
@@ -290,7 +291,7 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
@@ -313,9 +314,9 @@ button:hover {
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
-#buisness:hover,
+/* #buisness:hover,
 #container3 > span#audio:hover + worlda {
   display: grid;
 }
@@ -328,17 +329,17 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 30px;
+  /* margin-top: 30px;
   justify-content: space-between;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr);
-}
+} */
 
-#buisness:hover,
+/* #buisness:hover,
 #container3 > span#cooking:hover + #worldc {
   display: grid;
-}
-#container3 div#worldc {
+} */
+/* #container3 div#worldc {
   height: 50%;
   width: 100%;
   display: none;
@@ -347,16 +348,16 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
   margin-left:500px; */
-  margin-top: 20px;
+  /* margin-top: 20px;
   justify-content: center;
   padding: 10px;
   grid-template-columns: repeat(5, 1fr);
-}
+} */ */
 
-#world:hover,
+/* #world:hover,
 #container3 > span.x:hover + #world {
-  display: grid;
-}
+  display: grid; */
+/* }
 
 #container3 div#world {
   height: 50%;
@@ -367,13 +368,13 @@ button:hover {
   position: absolute;
   /* margin-right:-900px;
    margin-left:500px; */
-  margin-top: 30px;
+  /* margin-top: 30px;
   justify-content: space-between;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr);
-}
+} */
 
-.worlda:hover,
+/* .worlda:hover,
 #container3 > span.wire:hover + #worldw {
   display: grid;
 }
@@ -383,10 +384,10 @@ button:hover {
   display: none;
   text-align: center;
   gap: 70px;
-  position: absolute;
+  position: absolute; */ 
   /* margin-right:-900px;
    margin-left:500px; */
-  margin-top: 30px;
+  /* margin-top: 30px;
   justify-content: space-between;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -395,22 +396,47 @@ button:hover {
 .worlda:hover,
 #container3 > span.athletic:hover + .worlda {
   display: grid;
-}
-#container3 div.worlda {
+} */
+/* #container3 div.worlda {
   height: 50%;
   height: 50%;
   width: 100%;
   display: none;
   text-align: center;
   gap: 70px;
-  position: absolute;
+  position: absolute; */ 
   /* margin-right:-900px;
    margin-left:500px; */
-  margin-top: 30px;
+  /* margin-top: 30px;
   justify-content: space-between;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr);
+} */ 
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.nav-link {
+  margin-right: 10px;
+  cursor: pointer;
 }
+.submenu{
+  width:100%;
+  height:fit-content;
+  z-index: 33;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top:15px;  
+}
+
+
+.nav-link:hover + .submenu,
+.submenu:hover{
+    display: flex;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
 
 .firstcard {
   display: flex;
