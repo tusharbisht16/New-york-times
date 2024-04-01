@@ -456,3 +456,50 @@ async function fecthtopics() {
     console.log(err);
   }
 }
+
+
+// shubham login js
+let email = document.getElementById("emailgetfromlocal");
+
+let loginButton = document.getElementById("login-button");
+let getEmail = JSON.parse(localStorage.getItem("emailAddress"));
+email.textContent= getEmail; //email assign
+//open the popup
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+//close the popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+//Event listener for the login button
+loginButton.addEventListener('click', function() {
+    // If the button value is "Login", redirect to login.html
+    if(loginButton.textContent === 'Login') {
+        window.location.href = "login.html";
+    }
+    // If the button value is "Account", open the popup
+    else if(loginButton.textContent === 'Account') {
+        openPopup();
+    }
+});
+
+// Set button value based on whether email is present
+if(getEmail == null) {
+    loginButton.textContent = 'Login';
+    console.log(loginButton.value +" login");
+}else{
+    loginButton.textContent = 'Account';
+    console.log(loginButton.value +" Account");
+}
+
+//log out clear local storage
+  document.getElementById("logout-link").addEventListener('click', function() {
+    localStorage.removeItem("emailAddress");
+    //set back to login after logout
+    loginButton.textContent = 'Login';
+    // window.location.href="index.html";
+   
+    closePopup();
+});
