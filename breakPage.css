@@ -1,0 +1,33 @@
+/* break Page */
+#break-container{
+    padding: 15px;
+    width:300px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+}
+#subscribe-now{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 90%;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#box-mid{
+    display: grid;
+    justify-content: center;
+}
+#footer-break{
+   padding-left: 15%;
+   padding-right: 15%;
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 15px;
+    color: #706f6f;
+}

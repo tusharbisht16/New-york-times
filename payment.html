@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+<link rel="stylesheet" href="login.css">
+<style>
+    #pay-Order-Summary{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #payment-container {
+        display: grid;
+        justify-content: center;
+        width:60%;
+        margin-top: 50px;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid #ccc; 
+    }
+    #orderSummary{
+    background-color: #ccc;
+     width:30%;
+     margin-top: 50px;
+     padding-left: 5%;
+     padding-right: 5%;
+    }
+    h3 {
+        margin-bottom: 20px;
+    }
+    .form-group {
+        display: flex;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .form-group label {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        font-weight: bold;
+    }
+    .form-group input, 
+    .form-group select {
+        width: 80%;
+        margin-right: 5px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    #continue-btn {
+        padding: 10px 20px;
+        background-color: #040404;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="timer-bar" style="position: fixed; bottom: 0; width: 100%; background-color: #fff; padding: 10px; text-align: center; display: none;">
+        <span id="timer"></span>
+    </div>
+
+
+    <!-- nav --> 
+        <nav id="navigation-login">
+            <img style = "margin-top:5px; width:25%;" src="./image/newyork.png" alt=""/>
+        </nav>
+    
+
+    <!-- payment section order section -->
+<div id="pay-Order-Summary">
+<!-- payment section -->
+<div id="payment-container">
+    <h3>Payment</h3>
+    <div>
+        <div class="form-group">
+           <div> 
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+          </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" maxlength="16" required>
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" maxlength="3" required>
+          </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label for="country">Country</label>
+                <select id="country" name="country" style="width: 100%;" required>
+                <option value="IN" selected>India</option> <!-- Default value set to India -->
+                <option value="CA">Canada</option>
+                <option value="UK">United Kingdom</option>
+                <!-- Add more countries as needed -->
+            </select>
+            </div>
+            <div style="margin-left:20px;">
+                <label for="postalCode">Postal Code/ZIP</label>
+                <input type="text" id="postalCode" name="postalCode" placeholder="Enter postal code or ZIP" required>
+            </div>
+            
+        </div>
+        <button id="continue-btn">Continue</button>
+        <!-- <button id="skip-btn">Skip</button> -->
+    </div>
+</div>
+
+<!-- order summary -->
+<div id="orderSummary">
+ <p style="color:#585858">order summary</p>
+ 
+ <h3>All Access subscription</h3>
+ <p>Unlimited digital access to The New York Times.</p>
+ <hr>
+ <h3>Total due for the first year ₹600.00</h3>
+ <p style="color:#585858">Welcome offer price until: March 31, 2025</p>
+ <hr>
+ <div class="details-subs" style="display:flex; justify-content: space-between;">
+  <p>See details</p>
+  <p style="color:rgb(63, 142, 63)">You save ₹1900.00</p>
+ </div>
+</div>
+
+</div>
+
+
+<script>
+    
+        let continueBtn = document.getElementById('continue-btn');
+        let timerBar = document.getElementById('timer-bar');
+        let timerElement = document.getElementById('timer');
+        let timeLeft = 10; 
+    
+        let getEmail = JSON.parse(localStorage.getItem("emailAddress")); 
+
+        //the timer display
+        function updateTimer() {
+            timerElement.textContent = 'Redirecting in ' + timeLeft + ' seconds';
+        }
+    
+        // Function to start the timer
+        function startTimer() {
+            //Show timer bar
+            timerBar.style.display = 'block';
+    
+            //Update timer display
+            updateTimer();
+    
+            // Update the timer every second
+            let timerInterval = setInterval(function() {
+                timeLeft--;
+                updateTimer();
+                // If timer reaches 0, redirect and stop the timer
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    alert(`Account has been logged in ${getEmail} click ok!!!`);
+                    redirectToNextPage();
+                }
+            }, 1000); 
+        }
+    
+        // Function to redirect to the next page
+        function redirectToNextPage() {
+            window.location.href = "index.html";
+        }
+    
+        // Event listener for the "Continue" button
+        continueBtn.addEventListener('click', function() {
+            let fname = document.getElementById("firstName").value;
+            let lname = document.getElementById("lastName").value;
+            let cardNumber = document.getElementById("cardNumber").value;
+            let cvv = document.getElementById("cvv").value;
+    
+            // Check if all required fields are not empty
+            if(fname !== '' && lname !== '' && cardNumber !== '' && cvv !== '') {
+                // Check card number length
+                if(cardNumber.length === 16) {
+                    // Check CVV length
+                    if(cvv.length === 3) {
+                        startTimer();   // Start the timer
+
+                    } else {
+                        alert("CVV should be 3 digits only!!!");
+                    }
+                } else {
+                    alert("Card number should be 16 digits!!");
+                }
+            } else {
+                alert("Fill all the required information to continue!!!");
+            }
+        });
+</script> 
+</body>
+</html>

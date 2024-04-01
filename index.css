@@ -77,17 +77,13 @@
   display: flex;
   justify-content: space-around;
 }
-
 .simg {
   margin-inline: auto;
 }
 
 /* sanju's csss */
-body {
-  margin: 0;
-  padding: 0;
-}
 #container1 {
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: space-around;
@@ -126,7 +122,6 @@ img {
   overflow: visible;
   text-align: center;
   height: 5px;
-
   background: #fff;
   content: "§";
   padding: 0 4px;
@@ -152,7 +147,7 @@ img {
 }
 #container1 span:hover {
   color: black;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 5px;
   background-color: rgb(241, 239, 239);
 }
@@ -527,4 +522,63 @@ hr {
   #responsive {
     display: none;
   }
+}
+
+/* shubham login css */
+ /* Styles for the popup */
+ #popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0; 
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  z-index: 2;
+  overflow-y: auto; 
+  text-align: left;
+}
+/* Styles for the close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;  
+}
+#subscribe-btn{
+width:90%;
+color:white;
+padding:10px;
+background-color: black;
+border-radius: 8px;
+}
+.a-links{
+  text-decoration: none;
+  color: #222222;
+  font-style: unset;
+}
+.email-addres{
+  text-decoration: underline;
+  color:black;
+}
+#emailgetfromlocal{
+  text-decoration: underline;
+  font-weight: 800;
+}
+.titles-h2h3{
+  font-size: 17px;
+  margin-top: 30px;;
+}
+.log-out{
+  width:70%;
+  text-decoration: none;
+  border:1px solid;
+  padding:10px 20px 10px 20px;
+  color:white;
+  background-color: black;
+  font-size: 16px;
+  border-radius: 10px;;
 }
