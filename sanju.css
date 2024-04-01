@@ -250,7 +250,7 @@ button:hover{
  }
 
 
- #buisness:hover,#container3>span#audio:hover+worlda{
+ #worlda:hover,#container3>span#audio:hover+#worlda{
 
     display: grid;
  }
@@ -312,16 +312,16 @@ button:hover{
  }
 
 
- .worlda:hover,#container3>span.wire:hover+#worldw{
+ .worldw:hover,#container3>span.wire:hover+#world{
 
     display: grid;
  }
  #container3 div#worldw{
     height:50%;
      width:100%;
-     display: none;
+     display: grid;
      text-align: center;
-     gap:70px;
+     gap:30px;
      position:absolute;
      /* margin-right:-900px;
      margin-left:500px; */
@@ -353,6 +353,14 @@ button:hover{
      grid-template-columns: repeat(3,1fr);
 }
 
+#worldw{
+    display: flex;
+    gap:50px;
+}
+#worlda{
+    display: flex;
+    gap:50px;
+}
 
 @media (min-width: 1200px) {
     .container {
@@ -360,4 +368,47 @@ button:hover{
       margin: auto;
         }
     }
+
+
+#subcontainer1{
+    display: none;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;
+    padding:30px;
+} 
+.secondcont{
+    display: none;
+} 
+/* responsiveness for smaller screen less than 1012 px */
+@media screen and (max-width:1000px){
+    #subcontainer1{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 11px;
+        padding:30px;
+    } 
+    #container1{
+        display: none;
+    } 
+    hr{
+        display: none;
+    }
+
+    #container2{
+        display: none;
+    } 
+    #container3{
+        display: none;
+    } 
+
+    .secondcont{
+        
+    }
+}
+
+
 
