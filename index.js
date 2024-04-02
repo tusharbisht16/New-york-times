@@ -217,9 +217,10 @@ function createCard3(data) {
   let img = document.createElement("img");
   img.classList.add("img2");
 
+
   icard1.append(title, details);
 
-  icard1.style.width = "700px";
+  icard1.style.width = "70%";
 
   icard2.append(img);
   icard2.classList.add("timg");
@@ -484,6 +485,7 @@ loginButton.addEventListener('click', function() {
         openPopup();
     }
 });
+
 
 // Set button value based on whether email is present
 if(getEmail == null) {

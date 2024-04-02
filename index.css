@@ -9,6 +9,9 @@
   #second {
     display: none !important;
   }
+  #first {
+    display: none;
+  }
 }
 #container {
   display: flex;
@@ -17,7 +20,6 @@
   padding-bottom: 30px;
   border-bottom: 1px solid black;
 }
-
 
 #first {
   padding: 10px 5px 10px 10px;
@@ -39,7 +41,7 @@
     border-bottom: 1px solid black;
   }
 }
-#third >div:nth-last-child(1){
+#third > div:nth-last-child(1) {
   border-bottom: none;
 }
 .card1 {
@@ -75,6 +77,7 @@
 }
 .card3 {
   display: flex;
+
   justify-content: space-around;
 }
 .simg {
@@ -86,7 +89,7 @@
   position: relative;
   display: flex;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 11px;
   padding: 30px;
@@ -128,14 +131,19 @@ img {
   position: relative;
   top: -13px;
 }
+#display {
+  position: absolute;
+}
 .display {
-  /* display: none; */
   visibility: hidden;
 }
 
 #subDate {
   text-align: start;
   align-self: start;
+}
+#Date {
+  font-weight: bolder;
 }
 #container1 > div:nth-child(2) {
   font-family: "Roboto Condensed", sans-serif;
@@ -165,7 +173,7 @@ button:hover {
   /* border:1px solid green; */
   height: 10%;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
@@ -421,6 +429,9 @@ button:hover {
   gap: 30px;
   margin-bottom: 40px;
 }
+#tfirst > div:nth-of-type(1) .title{
+  font-size: 19px;
+}
 
 .topics {
   width: 215px;
@@ -433,6 +444,9 @@ button:hover {
 }
 #fourth > div > img {
   width: 215px;
+}
+#input {
+  height: 25px;
 }
 /* Vaibhav css */
 
@@ -486,6 +500,7 @@ ul > li:hover {
 }
 #copyrite {
   display: flex;
+  margin: auto;
   justify-content: space-between;
   flex-wrap: wrap;
   width: fit-content;
@@ -525,12 +540,12 @@ hr {
 }
 
 /* shubham login css */
- /* Styles for the popup */
- #popup {
+/* Styles for the popup */
+#popup {
   display: none;
   position: absolute;
   top: 0;
-  right: 0; 
+  right: 0;
   width: 250px;
   height: 100vh;
   background-color: white;
@@ -538,7 +553,7 @@ hr {
   border: 2px solid #ccc;
   border-radius: 5px;
   z-index: 2;
-  overflow-y: auto; 
+  overflow-y: auto;
   text-align: left;
 }
 /* Styles for the close button */
@@ -546,39 +561,39 @@ hr {
   position: absolute;
   top: 10px;
   right: 10px;
-  cursor: pointer;  
+  cursor: pointer;
 }
-#subscribe-btn{
-width:90%;
-color:white;
-padding:10px;
-background-color: black;
-border-radius: 8px;
+#subscribe-btn {
+  width: 90%;
+  color: white;
+  padding: 10px;
+  background-color: black;
+  border-radius: 8px;
 }
-.a-links{
+.a-links {
   text-decoration: none;
   color: #222222;
   font-style: unset;
 }
-.email-addres{
+.email-addres {
   text-decoration: underline;
-  color:black;
+  color: black;
 }
-#emailgetfromlocal{
+#emailgetfromlocal {
   text-decoration: underline;
   font-weight: 800;
 }
-.titles-h2h3{
+.titles-h2h3 {
   font-size: 17px;
-  margin-top: 30px;;
+  margin-top: 30px;
 }
-.log-out{
-  width:70%;
+.log-out {
+  width: 70%;
   text-decoration: none;
-  border:1px solid;
-  padding:10px 20px 10px 20px;
-  color:white;
+  border: 1px solid;
+  padding: 10px 20px 10px 20px;
+  color: white;
   background-color: black;
   font-size: 16px;
-  border-radius: 10px;;
+  border-radius: 10px;
 }
