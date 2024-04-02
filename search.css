@@ -1,0 +1,76 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1220px;
+    margin: auto;
+  }
+}
+
+#container1 {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+button {
+  color: white;
+  background-color: rgb(50, 104, 145);
+  padding: 11px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 500px;
+  border: none;
+  cursor: pointer;
+}
+#input {
+  height: 25px;
+}
+
+button > a {
+  color: white;
+  background-color: rgba(87, 100, 136, 0.685);
+  font-size: 10px;
+  font-weight: 200;
+  text-decoration: none;
+}
+#display {
+  position: absolute;
+}
+.display {
+  visibility: hidden;
+}
+.title > a {
+  text-decoration: none;
+
+  color: black;
+}
+
+.details > a {
+  text-decoration: none;
+  color: black;
+}
+#firstdiv{
+
+padding: 30px;
+background-color: #f7f7f7 ;
+}
+#searchedfor{
+  height: 50px;
+  width: 70%;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#searchedfor::placeholder{
+  font-size: 25px;
+
+}
+#searchedfor::placeholder:active{
+  border: none;
+
+}
+
