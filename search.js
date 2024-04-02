@@ -2,15 +2,17 @@ let keyword = localStorage.getItem("search");
 let getEmail = JSON.parse(localStorage.getItem("emailAddress"));
 let loginButton = document.getElementById("login-button");
 let seconddiv = document.getElementById("seconddiv");
-let searchedfor =document.getElementById("searchedfor");
-let totalcount= document.getElementById("totalcount");
+let searchedfor = document.getElementById("searchedfor");
+let totalcount = document.getElementById("totalcount");
+let homebtn= document.getElementById("home");
 
-
+homebtn.addEventListener("click",()=>{
+window.location.href= "index.html"
+})
 
 let searchbtn = document.getElementById("searchbtn");
 let inputDiv = document.getElementById("display");
-searchedfor.value= keyword;
-
+searchedfor.value = keyword;
 
 searchbtn.addEventListener("click", () => {
   inputDiv.classList.toggle("display");
@@ -18,17 +20,18 @@ searchbtn.addEventListener("click", () => {
 
 let search = document.getElementById("search");
 let input = document.getElementById("input");
-let searchbtn2= document.getElementById("searchbtn2");
+let searchbtn2 = document.getElementById("searchbtn2");
 
 search.addEventListener("click", (event) => {
   event.stopPropagation();
   localStorage.setItem("search", input.value);
+  location.reload();
 });
 
-searchbtn2.addEventListener("click",()=>{
+searchbtn2.addEventListener("click", () => {
   localStorage.setItem("search", searchedfor.value);
-  location.reload()
-})
+  location.reload();
+});
 
 // Set button value based on whether email is present
 if (getEmail == null) {
@@ -38,20 +41,19 @@ if (getEmail == null) {
 }
 
 fetchData();
-fetchtotal()
+fetchtotal();
 async function fetchtotal() {
   try {
     let res = await fetch(
       `https://new-york-times-2.onrender.com/data?q=${keyword}&_page=1`
     );
     let dat = await res.json();
- 
-    totalcount.innerText= res.headers.get('X-Total-Count');
+
+    totalcount.innerText = res.headers.get("X-Total-Count");
   } catch (error) {
     console.log(error);
   }
 }
-
 
 async function fetchData() {
   try {
@@ -89,10 +91,27 @@ function createCard(data) {
   ta.innerText = data.title;
   td.innerText = data.description;
   let img = document.createElement("img");
- img.src= data.urlToImage;
- img.style.maxWidth="500px"
- icard1.append(title,details);
- icard2.append(img);
+  img.src = data.urlToImage;
+  img.style.maxWidth = "500px";
+  icard1.append(title, details);
+  icard2.append(img);
   card.append(icard1, icard2);
   return card;
 }
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+//close the popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+loginButton.addEventListener('click', function() {
+  // If the button value is "Login", redirect to login.html
+  if(loginButton.textContent === 'Login') {
+      window.location.href = "login.html";
+  }
+  // If the button value is "Account", open the popup
+  else if(loginButton.textContent === 'Account') {
+      openPopup();
+  }
+});

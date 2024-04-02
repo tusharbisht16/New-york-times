@@ -249,6 +249,7 @@ let input = document.getElementById("input");
 search.addEventListener("click",(event)=>{
   event.stopPropagation();
    localStorage.setItem("search",input.value);
+   window.location.href = 'search.html';
 })
 
 
