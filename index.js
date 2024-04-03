@@ -226,14 +226,15 @@ function createCard3(data) {
 
 
   icard1.append(title, details);
-
+  icard1.classList.add("third-card-para")
   icard1.style.width = "70%";
 
   icard2.append(img);
   icard2.classList.add("timg");
   img.src = data.urlToImage;
   // icard2.style.width = "50%";
-  img.style.width = "200px";
+  icard2.style.width = "200px";
+  img.style.width = "100%";
   // img.style.height="200px"
 
   card.append(icard1, icard2);
@@ -364,9 +365,9 @@ function createcardfirst(data) {
   let img = document.createElement("img");
 
   icar1.append(title, details);
-
   icar1.style.width = "40%";
-
+  icar1.classList.add("icar1");
+  icar2.classList.add("icar2");
     icar2.append(img);
     img.src = data.urlToImage;
     icar2.style.width = "50%";

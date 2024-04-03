@@ -21,6 +21,12 @@
   #nav1-header-links {
     display: none;
   }
+  .icar2,.icar1{
+    width: 90% !important;
+  }
+ .third-card-para , .timg {
+  width: 90% !important;
+ }
 }
 
 #container {
@@ -46,9 +52,11 @@
   display: grid;
   gap: 30px;
   > div {
-    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
     /* gap: 10px; */
     border-bottom: 1px solid black;
+
   }
 }
 #third > div:nth-last-child(1) {
@@ -301,6 +309,7 @@ button:hover {
 /* main css */
 .firstcard {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 #tfirst {
