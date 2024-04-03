@@ -5,18 +5,25 @@ let url = "https://new-york-times-2.onrender.com/stock";
 let first = document.getElementById("first");
 let second = document.getElementById("second");
 let third = document.getElementById("third");
-let firstChild= document.getElementsByClassName("")
+let firstChild= document.getElementsByClassName("");
+
+let loading = document.getElementById("loading");
+
+
+
 let defaultImg = "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.insider.com%2F62c831d38045920019ae2c5a%3Fwidth%3D700&tbnid=IVmzvfaMhrHj2M&vet=12ahUKEwiN7sSCzZ6FAxW4hWMGHcT0BZUQMygBegQIARBQ..i&imgrefurl=https%3A%2F%2Fwww.businessinsider.com%2Fbiden-stops-short-of-declaring-a-national-climate-emergency-2022-7&docid=NaonEPVp0eY3NM&w=700&h=525&q=joe%20images%20with%20short%20image%20address&ved=2ahUKEwiN7sSCzZ6FAxW4hWMGHcT0BZUQMygBegQIARBQ"
 async function fetchDatafirst() {
   try {
     let ran = Math.floor(Math.random() * (35 - 1)) + 1;
     let res = await fetch(`${Dataurl}?_page=${ran}&_limit=23`);
     let dat = await res.json();
+    loading.style.display="none";
     appendDatafirst(dat);
   } catch (err) {
     console.log(err);
   }
 }
+
 async function fetchDatathird() {
   try {
     let ran = Math.floor(Math.random() * (80- 1)) + 1;
@@ -371,6 +378,9 @@ function createcardfirst(data) {
   card.append(icar2, icar1);
   return card;
 }
+
+
+
 fetchdatatfirst()
 async function fetchdatatfirst() {
   try {

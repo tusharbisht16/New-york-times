@@ -24,52 +24,80 @@
             </span>
           </div>
           <div>
-            <img src="./image/newyork.png" style="width: 60%" alt="" />
+            <img src="./image/newyork.png" style="width: 50%" alt="" />
           </div>
           <div>
             <button id="home">Home</button>
             <button id="login-button" class="login-button space">Login</button>
           </div>
           <div id="popup" class="popup">
-            <span id="emailgetfromlocal" ></span>
+            <span id="emailgetfromlocal"></span>
             <span class="close" onclick="closePopup()">
-            <span class="material-symbols-outlined">close</span>
+              <span class="material-symbols-outlined">close</span>
             </span>
-            
+
             <h2 class="titles-h2h3">Good afternoon.</h2>
-            <p>The email you logged in with isn’t associated with a News subscription and has limited access to articles.</p>
+            <p>
+              The email you logged in with isn’t associated with a News
+              subscription and has limited access to articles.
+            </p>
             <button id="subscribe-btn">Subscribe for more access</button>
-            <p><b>Already subscribed?</b> <span> <a href="login.html" class="email-addres">Try a different email</a></span></p>
-      
-            <hr>
-            <a class="a-links" href="https://www.nytimes.com/account?source=vi.mum">Account Setting</a>
-            <br>
-      
+            <p>
+              <b>Already subscribed?</b>
+              <span>
+                <a href="login.html" class="email-addres"
+                  >Try a different email</a
+                ></span
+              >
+            </p>
+
+            <hr />
+            <a
+              class="a-links"
+              href="https://www.nytimes.com/account?source=vi.mum"
+              >Account Setting</a
+            >
+            <br />
+
             <h3 class="titles-h2h3">YOUR CONTENT</h3>
-              <hr>
-            <a class="a-links" href="https://www.nytimes.com/saved">Saved articles</a><br>
-            <a class="a-links" href="https://www.nytimes.com/account/settings?source=vi.mum">Newsletters</a>
-            
-            
+            <hr />
+            <a class="a-links" href="https://www.nytimes.com/saved"
+              >Saved articles</a
+            ><br />
+            <a
+              class="a-links"
+              href="https://www.nytimes.com/account/settings?source=vi.mum"
+              >Newsletters</a
+            >
+
             <h3 class="titles-h2h3">GET SUPPORT</h3>
-            <hr>
-            <a class="a-links" href="https://help.nytimes.com/hc/en-us?referrer=masthead-user-modal">Help Center</a>
-           <br>
-           <br>
-      
-             
-           <br><br>
+            <hr />
+            <a
+              class="a-links"
+              href="https://help.nytimes.com/hc/en-us?referrer=masthead-user-modal"
+              >Help Center</a
+            >
+            <br />
+            <br />
+
+            <br /><br />
             <a class="log-out" href="index.html" id="logout-link">Log out</a>
           </div>
         </div>
       </div>
     </header>
-    
+
     <main class="container">
       <div id="firstdiv">
-        <p>Showing <span id="totalcount" ></span> results for:</p>
-        <input id="searchedfor" type="text" placeholder="Search The New York Times" />
-        <span id="searchbtn2" class="material-symbols-outlined">search</span>
+        <div id="first-innerdiv">
+          <p>Showing <span id="totalcount"></span> results for:</p>
+          <input
+            id="searchedfor"
+            type="text"
+            placeholder="Search The New York Times"
+          />
+          <span id="searchbtn2" class="material-symbols-outlined">search</span>
+        </div>
       </div>
       <div id="seconddiv"></div>
     </main>

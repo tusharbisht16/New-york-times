@@ -80,6 +80,7 @@ function createCard(data) {
   let icard2 = document.createElement("div");
   let title = document.createElement("h4");
   let ta = document.createElement("a");
+  card.classList.add("card1");
   title.classList.add("title");
   title.append(ta);
   ta.href = data.url;
@@ -102,7 +103,7 @@ function openPopup() {
   document.getElementById("popup").style.display = "block";
 }
 //close the popup
-function closePopup() {
+function closePopup(){
   document.getElementById("popup").style.display = "none";
 }
 loginButton.addEventListener('click', function() {
