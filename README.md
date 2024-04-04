@@ -3,6 +3,13 @@
 ## Introduction
 It was a collaborative effort taken by four team members Tushar Bisht, Sanju Kumari, Vaibhav More, and Shubam Kangar and it was completed in a span of 5 days. The purpose of this project was to test our coding skills as well as our team-building skills.
 
+## Team members
+- Tushar Bisht
+- Shubam Khangar
+- Sanju Kumari
+- Vaibhav more
+
+
 ## Project Type
 Frontend | Backend | Fullstack
 
