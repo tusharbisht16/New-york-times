@@ -31,6 +31,11 @@ https://drive.google.com/file/d/1iIlcRerXfXcf3Rgu0xvbjsK9O_f9KPNC/view?usp=shari
 ## Video Walkthrough of the codebase
 https://drive.google.com/file/d/1P-N9Zlcxob6oxZXZS_XrJNArwSXdS5h_/view?usp=sharing
 
+## User view
+![image](https://github.com/tusharbisht16/New-york-times/assets/157601195/781e9f57-3675-40e8-953c-41786ecf3308)
+
+
+
 ## Features
 List out the key features of your application.
 
