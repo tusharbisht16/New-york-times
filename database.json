@@ -10858,8 +10858,15 @@
  {"id":49,"stock":"KRNY","cap":"$1.27B"},
  {"id":50,"stock":"HUBS","cap":"$2.46B"}],
  "user":[{
+    "id":"1",
     "username":"Shubam",
-    "password":"abb"
+    "password":"shubam123"
+  }
+  ],
+  "admin":[{
+    "id":"1",
+    "username":"admin",
+    "password":"admin"
   }
   ]
 }
